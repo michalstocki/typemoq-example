@@ -4,7 +4,9 @@
   "description": "Real example usage of typemoq library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "find ./src -name \"*.js\" -delete && find ./test -name \"*.js\" -delete",
+    "compile": "./node_modules/.bin/tsc",
+    "test": "npm run compile && ./node_modules/.bin/mocha --recursive"
   },
   "keywords": [
     "typmoq",
@@ -17,5 +19,14 @@
     "training"
   ],
   "author": "Michał Stocki",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^6.0.46",
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "typemoq": "^0.3.3",
+    "typescript": "^2.0.6"
+  }
 }
