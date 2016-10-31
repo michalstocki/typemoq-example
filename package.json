@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "find ./src -name \"*.js\" -delete && find ./test -name \"*.js\" -delete",
     "compile": "./node_modules/.bin/tsc",
-    "test": "npm run compile && ./node_modules/.bin/mocha --recursive"
+    "test": "npm run compile && ./node_modules/.bin/mocha --recursive --inline-diffs"
   },
   "keywords": [
     "typmoq",
