@@ -5,7 +5,7 @@ export class PaginationSetBuilder {
 
     private previous:PaginationSetItem;
     private first:PaginationSetItem;
-    private adjacentPages:Array<PaginationSetItem>;
+    private adjacentPages:Array<PaginationSetItem> = [];
     private last:PaginationSetItem;
     private next:PaginationSetItem;
 
