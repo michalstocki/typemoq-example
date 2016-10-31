@@ -4,7 +4,7 @@ export class AlbumCollectionProvider {
         return null;
     }
 
-    public getCurrentPage():void {
+    public getCurrentPage():number {
         return null;
     }
 }

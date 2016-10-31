@@ -11,7 +11,8 @@
     "types": [
       "mocha",
       "node",
-      "chai"
+      "chai",
+      "typemoq"
     ]
   }
 }
